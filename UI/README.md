@@ -1,1 +1,0 @@
-Cooltime scheduler frontend
