@@ -1,4 +1,4 @@
-"""Photo Analyzer unittest"""
+'''Photo Analyzer unittest'''
 
 from photo_analyzer import PhotoAnalyzer
 import pytest

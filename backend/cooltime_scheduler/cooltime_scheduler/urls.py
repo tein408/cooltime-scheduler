@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from cooltime_scheduler.rpc import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("upload/", views.upload_photo, name="upload")
 ]
