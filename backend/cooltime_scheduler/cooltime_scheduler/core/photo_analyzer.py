@@ -4,10 +4,11 @@ from pathlib import Path
 
 class PhotoAnalyzer:
     '''Photo Analyzer class to analyzer the given photo.'''
+
     def __init__(self):
         pass
 
-    def calculate_calories(self, photo_url: str):
+    def calculate_calories(self, photo_url: str) -> bytes:
         '''Calculates calories from the photo url.
         
         Args:
@@ -19,6 +20,7 @@ class PhotoAnalyzer:
         Raises
             NotImplementedError: remote storage is not supported for now.
         '''
+
         local_path = Path(photo_url)
         
         if local_path.exists():
